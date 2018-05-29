@@ -1,0 +1,16 @@
+- write interface ✅
+- add all methods to the interface ✅
+- write struct ✅
+- create variable ✅
+- transform all functions to methods of that struct  ✅
+- write Set function ✅
+- write pointer functions  ✅
+
+
+- make generateInterface a visitor's method ✅
+- place comments
+- replace go gen comment
+
+          
+
+      

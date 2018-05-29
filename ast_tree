@@ -1,0 +1,1039 @@
+0.000s targetFile=&ast.File{
+           Doc:     (*ast.CommentGroup)(nil),
+           Package: 1,
+           Name:    &ast.Ident{
+               NamePos: 9,
+               Name:    "childir",
+               Obj:     (*ast.Object)(nil),
+           },
+           Decls: {
+               &ast.GenDecl{
+                   Doc:    (*ast.CommentGroup)(nil),
+                   TokPos: 18,
+                   Tok:    75,
+                   Lparen: 25,
+                   Specs:  {
+                       &ast.ImportSpec{
+                           Doc:     (*ast.CommentGroup)(nil),
+                           Name:    (*ast.Ident)(nil),
+                           Path:    &ast.BasicLit{ValuePos:28, Kind:9, Value:"\"fmt\""},
+                           Comment: (*ast.CommentGroup)(nil),
+                           EndPos:  0,
+                       },
+                       &ast.ImportSpec{
+                           Doc:     (*ast.CommentGroup)(nil),
+                           Name:    (*ast.Ident)(nil),
+                           Path:    &ast.BasicLit{ValuePos:35, Kind:9, Value:"\"time\""},
+                           Comment: (*ast.CommentGroup)(nil),
+                           EndPos:  0,
+                       },
+                   },
+                   Rparen: 42,
+               },
+               &ast.FuncDecl{
+                   Doc:  (*ast.CommentGroup)(nil),
+                   Recv: (*ast.FieldList)(nil),
+                   Name: &ast.Ident{
+                       NamePos: 139,
+                       Name:    "SomethingWithTime",
+                       Obj:     &ast.Object{
+                           Kind: 5,
+                           Name: "SomethingWithTime",
+                           Decl: &ast.FuncDecl{(CYCLIC REFERENCE)},
+                           Data: nil,
+                           Type: nil,
+                       },
+                   },
+                   Type: &ast.FuncType{
+                       Func:   134,
+                       Params: &ast.FieldList{
+                           Opening: 156,
+                           List:    nil,
+                           Closing: 157,
+                       },
+                       Results: &ast.FieldList{
+                           Opening: 0,
+                           List:    {
+                               &ast.Field{
+                                   Doc:   (*ast.CommentGroup)(nil),
+                                   Names: nil,
+                                   Type:  &ast.StarExpr{
+                                       Star: 159,
+                                       X:    &ast.SelectorExpr{
+                                           X:  &ast.Ident{
+                                               NamePos: 160,
+                                               Name:    "time",
+                                               Obj:     (*ast.Object)(nil),
+                                           },
+                                           Sel: &ast.Ident{
+                                               NamePos: 165,
+                                               Name:    "Time",
+                                               Obj:     (*ast.Object)(nil),
+                                           },
+                                       },
+                                   },
+                                   Tag:     (*ast.BasicLit)(nil),
+                                   Comment: (*ast.CommentGroup)(nil),
+                               },
+                           },
+                           Closing: 0,
+                       },
+                   },
+                   Body: &ast.BlockStmt{
+                       Lbrace: 170,
+                       List:   {
+                           &ast.AssignStmt{
+                               Lhs: {
+                                   &ast.Ident{
+                                       NamePos: 173,
+                                       Name:    "tt",
+                                       Obj:     &ast.Object{
+                                           Kind: 4,
+                                           Name: "tt",
+                                           Decl: &ast.AssignStmt{(CYCLIC REFERENCE)},
+                                           Data: nil,
+                                           Type: nil,
+                                       },
+                                   },
+                               },
+                               TokPos: 176,
+                               Tok:    47,
+                               Rhs:    {
+                                   &ast.CallExpr{
+                                       Fun: &ast.SelectorExpr{
+                                           X:  &ast.Ident{
+                                               NamePos: 179,
+                                               Name:    "time",
+                                               Obj:     (*ast.Object)(nil),
+                                           },
+                                           Sel: &ast.Ident{
+                                               NamePos: 184,
+                                               Name:    "Now",
+                                               Obj:     (*ast.Object)(nil),
+                                           },
+                                       },
+                                       Lparen:   187,
+                                       Args:     nil,
+                                       Ellipsis: 0,
+                                       Rparen:   188,
+                                   },
+                               },
+                           },
+                           &ast.ExprStmt{
+                               X:  &ast.CallExpr{
+                                   Fun: &ast.SelectorExpr{
+                                       X:  &ast.Ident{
+                                           NamePos: 191,
+                                           Name:    "fmt",
+                                           Obj:     (*ast.Object)(nil),
+                                       },
+                                       Sel: &ast.Ident{
+                                           NamePos: 195,
+                                           Name:    "Println",
+                                           Obj:     (*ast.Object)(nil),
+                                       },
+                                   },
+                                   Lparen: 202,
+                                   Args:   {
+                                       &ast.Ident{
+                                           NamePos: 203,
+                                           Name:    "tt",
+                                           Obj:     &ast.Object{(CYCLIC REFERENCE)},
+                                       },
+                                   },
+                                   Ellipsis: 0,
+                                   Rparen:   205,
+                               },
+                           },
+                           &ast.ReturnStmt{
+                               Return:  208,
+                               Results: {
+                                   &ast.UnaryExpr{
+                                       OpPos: 215,
+                                       Op:    17,
+                                       X:     &ast.Ident{
+                                           NamePos: 216,
+                                           Name:    "tt",
+                                           Obj:     &ast.Object{(CYCLIC REFERENCE)},
+                                       },
+                                   },
+                               },
+                           },
+                       },
+                       Rbrace: 219,
+                   },
+               },
+               &ast.GenDecl{
+                   Doc:    (*ast.CommentGroup)(nil),
+                   TokPos: 222,
+                   Tok:    84,
+                   Lparen: 0,
+                   Specs:  {
+                       &ast.TypeSpec{
+                           Doc:  (*ast.CommentGroup)(nil),
+                           Name: &ast.Ident{
+                               NamePos: 227,
+                               Name:    "ChosenInterface",
+                               Obj:     &ast.Object{
+                                   Kind: 3,
+                                   Name: "ChosenInterface",
+                                   Decl: &ast.TypeSpec{(CYCLIC REFERENCE)},
+                                   Data: nil,
+                                   Type: nil,
+                               },
+                           },
+                           Assign: 0,
+                           Type:   &ast.InterfaceType{
+                               Interface: 243,
+                               Methods:   &ast.FieldList{
+                                   Opening: 253,
+                                   List:    {
+                                       &ast.Field{
+                                           Doc:   (*ast.CommentGroup)(nil),
+                                           Names: {
+                                               &ast.Ident{
+                                                   NamePos: 256,
+                                                   Name:    "SomethingWithStrings",
+                                                   Obj:     &ast.Object{
+                                                       Kind: 5,
+                                                       Name: "SomethingWithStrings",
+                                                       Decl: &!%v(DEPTH EXCEEDED),
+                                                       Data: nil,
+                                                       Type: nil,
+                                                   },
+                                               },
+                                           },
+                                           Type: &ast.FuncType{
+                                               Func:   0,
+                                               Params: &ast.FieldList{
+                                                   Opening: 276,
+                                                   List:    {
+                                                       &!%v(DEPTH EXCEEDED),
+                                                   },
+                                                   Closing: 288,
+                                               },
+                                               Results: &ast.FieldList{
+                                                   Opening: 0,
+                                                   List:    {
+                                                       &!%v(DEPTH EXCEEDED),
+                                                   },
+                                                   Closing: 0,
+                                               },
+                                           },
+                                           Tag:     (*ast.BasicLit)(nil),
+                                           Comment: (*ast.CommentGroup)(nil),
+                                       },
+                                       &ast.Field{
+                                           Doc:   (*ast.CommentGroup)(nil),
+                                           Names: {
+                                               &ast.Ident{
+                                                   NamePos: 298,
+                                                   Name:    "SomethingWithFloats",
+                                                   Obj:     &ast.Object{
+                                                       Kind: 5,
+                                                       Name: "SomethingWithFloats",
+                                                       Decl: &!%v(DEPTH EXCEEDED),
+                                                       Data: nil,
+                                                       Type: nil,
+                                                   },
+                                               },
+                                           },
+                                           Type: &ast.FuncType{
+                                               Func:   0,
+                                               Params: &ast.FieldList{
+                                                   Opening: 317,
+                                                   List:    {
+                                                       &!%v(DEPTH EXCEEDED),
+                                                   },
+                                                   Closing: 328,
+                                               },
+                                               Results: &ast.FieldList{
+                                                   Opening: 0,
+                                                   List:    {
+                                                       &!%v(DEPTH EXCEEDED),
+                                                   },
+                                                   Closing: 0,
+                                               },
+                                           },
+                                           Tag:     (*ast.BasicLit)(nil),
+                                           Comment: (*ast.CommentGroup)(nil),
+                                       },
+                                   },
+                                   Closing: 336,
+                               },
+                               Incomplete: false,
+                           },
+                           Comment: (*ast.CommentGroup)(nil),
+                       },
+                   },
+                   Rparen: 0,
+               },
+               &ast.GenDecl{
+                   Doc:    (*ast.CommentGroup)(nil),
+                   TokPos: 339,
+                   Tok:    84,
+                   Lparen: 0,
+                   Specs:  {
+                       &ast.TypeSpec{
+                           Doc:  (*ast.CommentGroup)(nil),
+                           Name: &ast.Ident{
+                               NamePos: 344,
+                               Name:    "ChosenInterfaceImpl",
+                               Obj:     &ast.Object{
+                                   Kind: 3,
+                                   Name: "ChosenInterfaceImpl",
+                                   Decl: &ast.TypeSpec{(CYCLIC REFERENCE)},
+                                   Data: nil,
+                                   Type: nil,
+                               },
+                           },
+                           Assign: 0,
+                           Type:   &ast.StructType{
+                               Struct: 364,
+                               Fields: &ast.FieldList{
+                                   Opening: 370,
+                                   List:    nil,
+                                   Closing: 371,
+                               },
+                               Incomplete: false,
+                           },
+                           Comment: (*ast.CommentGroup)(nil),
+                       },
+                   },
+                   Rparen: 0,
+               },
+               &ast.GenDecl{
+                   Doc:    (*ast.CommentGroup)(nil),
+                   TokPos: 374,
+                   Tok:    85,
+                   Lparen: 0,
+                   Specs:  {
+                       &ast.ValueSpec{
+                           Doc:   (*ast.CommentGroup)(nil),
+                           Names: {
+                               &ast.Ident{
+                                   NamePos: 378,
+                                   Name:    "defaultChosenInterface",
+                                   Obj:     &ast.Object{
+                                       Kind: 4,
+                                       Name: "defaultChosenInterface",
+                                       Decl: &ast.ValueSpec{(CYCLIC REFERENCE)},
+                                       Data: int(0),
+                                       Type: nil,
+                                   },
+                               },
+                           },
+                           Type: &ast.Ident{
+                               NamePos: 401,
+                               Name:    "ChosenInterface",
+                               Obj:     &ast.Object{
+                                   Kind: 3,
+                                   Name: "ChosenInterface",
+                                   Decl: &ast.TypeSpec{(CYCLIC REFERENCE)},
+                                   Data: nil,
+                                   Type: nil,
+                               },
+                           },
+                           Values: {
+                               &ast.UnaryExpr{
+                                   OpPos: 419,
+                                   Op:    17,
+                                   X:     &ast.CompositeLit{
+                                       Type: &ast.Ident{
+                                           NamePos: 420,
+                                           Name:    "ChosenInterfaceImpl",
+                                           Obj:     &ast.Object{(CYCLIC REFERENCE)},
+                                       },
+                                       Lbrace: 439,
+                                       Elts:   nil,
+                                       Rbrace: 440,
+                                   },
+                               },
+                           },
+                           Comment: (*ast.CommentGroup)(nil),
+                       },
+                   },
+                   Rparen: 0,
+               },
+               &ast.FuncDecl{
+                   Doc:  (*ast.CommentGroup)(nil),
+                   Recv: (*ast.FieldList)(nil),
+                   Name: &ast.Ident{
+                       NamePos: 448,
+                       Name:    "SetChosenInterface",
+                       Obj:     &ast.Object{
+                           Kind: 5,
+                           Name: "SetChosenInterface",
+                           Decl: &ast.FuncDecl{(CYCLIC REFERENCE)},
+                           Data: nil,
+                           Type: nil,
+                       },
+                   },
+                   Type: &ast.FuncType{
+                       Func:   443,
+                       Params: &ast.FieldList{
+                           Opening: 466,
+                           List:    {
+                               &ast.Field{
+                                   Doc:   (*ast.CommentGroup)(nil),
+                                   Names: {
+                                       &ast.Ident{
+                                           NamePos: 467,
+                                           Name:    "eh",
+                                           Obj:     &ast.Object{
+                                               Kind: 4,
+                                               Name: "eh",
+                                               Decl: &ast.Field{(CYCLIC REFERENCE)},
+                                               Data: nil,
+                                               Type: nil,
+                                           },
+                                       },
+                                   },
+                                   Type: &ast.Ident{
+                                       NamePos: 470,
+                                       Name:    "ChosenInterface",
+                                       Obj:     &ast.Object{(CYCLIC REFERENCE)},
+                                   },
+                                   Tag:     (*ast.BasicLit)(nil),
+                                   Comment: (*ast.CommentGroup)(nil),
+                               },
+                           },
+                           Closing: 485,
+                       },
+                       Results: &ast.FieldList{
+                           Opening: 0,
+                           List:    {
+                               &ast.Field{
+                                   Doc:   (*ast.CommentGroup)(nil),
+                                   Names: nil,
+                                   Type:  &ast.Ident{
+                                       NamePos: 487,
+                                       Name:    "ChosenInterface",
+                                       Obj:     &ast.Object{(CYCLIC REFERENCE)},
+                                   },
+                                   Tag:     (*ast.BasicLit)(nil),
+                                   Comment: (*ast.CommentGroup)(nil),
+                               },
+                           },
+                           Closing: 0,
+                       },
+                   },
+                   Body: &ast.BlockStmt{
+                       Lbrace: 503,
+                       List:   {
+                           &ast.AssignStmt{
+                               Lhs: {
+                                   &ast.Ident{
+                                       NamePos: 506,
+                                       Name:    "old",
+                                       Obj:     &ast.Object{
+                                           Kind: 4,
+                                           Name: "old",
+                                           Decl: &ast.AssignStmt{(CYCLIC REFERENCE)},
+                                           Data: nil,
+                                           Type: nil,
+                                       },
+                                   },
+                               },
+                               TokPos: 510,
+                               Tok:    47,
+                               Rhs:    {
+                                   &ast.Ident{
+                                       NamePos: 513,
+                                       Name:    "defaultChosenInterface",
+                                       Obj:     &ast.Object{(CYCLIC REFERENCE)},
+                                   },
+                               },
+                           },
+                           &ast.AssignStmt{
+                               Lhs: {
+                                   &ast.Ident{
+                                       NamePos: 537,
+                                       Name:    "defaultChosenInterface",
+                                       Obj:     &ast.Object{(CYCLIC REFERENCE)},
+                                   },
+                               },
+                               TokPos: 560,
+                               Tok:    42,
+                               Rhs:    {
+                                   &ast.Ident{
+                                       NamePos: 562,
+                                       Name:    "eh",
+                                       Obj:     &ast.Object{(CYCLIC REFERENCE)},
+                                   },
+                               },
+                           },
+                           &ast.ReturnStmt{
+                               Return:  567,
+                               Results: {
+                                   &ast.Ident{
+                                       NamePos: 574,
+                                       Name:    "old",
+                                       Obj:     &ast.Object{
+                                           Kind: 4,
+                                           Name: "old",
+                                           Decl: &ast.AssignStmt{(CYCLIC REFERENCE)},
+                                           Data: nil,
+                                           Type: nil,
+                                       },
+                                   },
+                               },
+                           },
+                       },
+                       Rbrace: 578,
+                   },
+               },
+               &ast.FuncDecl{
+                   Doc:  (*ast.CommentGroup)(nil),
+                   Recv: &ast.FieldList{
+                       Opening: 586,
+                       List:    {
+                           &ast.Field{
+                               Doc:   (*ast.CommentGroup)(nil),
+                               Names: {
+                                   &ast.Ident{
+                                       NamePos: 587,
+                                       Name:    "mck",
+                                       Obj:     &ast.Object{
+                                           Kind: 4,
+                                           Name: "mck",
+                                           Decl: &ast.Field{(CYCLIC REFERENCE)},
+                                           Data: nil,
+                                           Type: nil,
+                                       },
+                                   },
+                               },
+                               Type: &ast.StarExpr{
+                                   Star: 591,
+                                   X:    &ast.Ident{
+                                       NamePos: 592,
+                                       Name:    "ChosenInterfaceImpl",
+                                       Obj:     &ast.Object{(CYCLIC REFERENCE)},
+                                   },
+                               },
+                               Tag:     (*ast.BasicLit)(nil),
+                               Comment: (*ast.CommentGroup)(nil),
+                           },
+                       },
+                       Closing: 611,
+                   },
+                   Name: &ast.Ident{
+                       NamePos: 613,
+                       Name:    "SomethingWithStrings",
+                       Obj:     (*ast.Object)(nil),
+                   },
+                   Type: &ast.FuncType{
+                       Func:   581,
+                       Params: &ast.FieldList{
+                           Opening: 633,
+                           List:    {
+                               &ast.Field{
+                                   Doc:   (*ast.CommentGroup)(nil),
+                                   Names: {
+                                       &ast.Ident{
+                                           NamePos: 634,
+                                           Name:    "word",
+                                           Obj:     &ast.Object{
+                                               Kind: 4,
+                                               Name: "word",
+                                               Decl: &ast.Field{(CYCLIC REFERENCE)},
+                                               Data: nil,
+                                               Type: nil,
+                                           },
+                                       },
+                                   },
+                                   Type: &ast.Ident{
+                                       NamePos: 639,
+                                       Name:    "string",
+                                       Obj:     (*ast.Object)(nil),
+                                   },
+                                   Tag:     (*ast.BasicLit)(nil),
+                                   Comment: (*ast.CommentGroup)(nil),
+                               },
+                           },
+                           Closing: 645,
+                       },
+                       Results: &ast.FieldList{
+                           Opening: 0,
+                           List:    {
+                               &ast.Field{
+                                   Doc:   (*ast.CommentGroup)(nil),
+                                   Names: nil,
+                                   Type:  &ast.Ident{
+                                       NamePos: 647,
+                                       Name:    "string",
+                                       Obj:     (*ast.Object)(nil),
+                                   },
+                                   Tag:     (*ast.BasicLit)(nil),
+                                   Comment: (*ast.CommentGroup)(nil),
+                               },
+                           },
+                           Closing: 0,
+                       },
+                   },
+                   Body: &ast.BlockStmt{
+                       Lbrace: 654,
+                       List:   {
+                           &ast.ExprStmt{
+                               X:  &ast.CallExpr{
+                                   Fun: &ast.SelectorExpr{
+                                       X:  &ast.Ident{
+                                           NamePos: 657,
+                                           Name:    "fmt",
+                                           Obj:     (*ast.Object)(nil),
+                                       },
+                                       Sel: &ast.Ident{
+                                           NamePos: 661,
+                                           Name:    "Println",
+                                           Obj:     (*ast.Object)(nil),
+                                       },
+                                   },
+                                   Lparen: 668,
+                                   Args:   {
+                                       &ast.Ident{
+                                           NamePos: 669,
+                                           Name:    "word",
+                                           Obj:     &ast.Object{(CYCLIC REFERENCE)},
+                                       },
+                                   },
+                                   Ellipsis: 0,
+                                   Rparen:   673,
+                               },
+                           },
+                           &ast.ReturnStmt{
+                               Return:  676,
+                               Results: {
+                                   &ast.Ident{
+                                       NamePos: 683,
+                                       Name:    "word",
+                                       Obj:     &ast.Object{(CYCLIC REFERENCE)},
+                                   },
+                               },
+                           },
+                       },
+                       Rbrace: 688,
+                   },
+               },
+               &ast.FuncDecl{
+                   Doc:  (*ast.CommentGroup)(nil),
+                   Recv: &ast.FieldList{
+                       Opening: 696,
+                       List:    {
+                           &ast.Field{
+                               Doc:   (*ast.CommentGroup)(nil),
+                               Names: {
+                                   &ast.Ident{
+                                       NamePos: 697,
+                                       Name:    "mck",
+                                       Obj:     &ast.Object{
+                                           Kind: 4,
+                                           Name: "mck",
+                                           Decl: &ast.Field{(CYCLIC REFERENCE)},
+                                           Data: nil,
+                                           Type: nil,
+                                       },
+                                   },
+                               },
+                               Type: &ast.StarExpr{
+                                   Star: 701,
+                                   X:    &ast.Ident{
+                                       NamePos: 702,
+                                       Name:    "ChosenInterfaceImpl",
+                                       Obj:     &ast.Object{(CYCLIC REFERENCE)},
+                                   },
+                               },
+                               Tag:     (*ast.BasicLit)(nil),
+                               Comment: (*ast.CommentGroup)(nil),
+                           },
+                       },
+                       Closing: 721,
+                   },
+                   Name: &ast.Ident{
+                       NamePos: 723,
+                       Name:    "SomethingWithFloats",
+                       Obj:     (*ast.Object)(nil),
+                   },
+                   Type: &ast.FuncType{
+                       Func:   691,
+                       Params: &ast.FieldList{
+                           Opening: 742,
+                           List:    {
+                               &ast.Field{
+                                   Doc:   (*ast.CommentGroup)(nil),
+                                   Names: {
+                                       &ast.Ident{
+                                           NamePos: 743,
+                                           Name:    "numb",
+                                           Obj:     &ast.Object{
+                                               Kind: 4,
+                                               Name: "numb",
+                                               Decl: &ast.Field{(CYCLIC REFERENCE)},
+                                               Data: nil,
+                                               Type: nil,
+                                           },
+                                       },
+                                   },
+                                   Type: &ast.Ident{
+                                       NamePos: 748,
+                                       Name:    "int64",
+                                       Obj:     (*ast.Object)(nil),
+                                   },
+                                   Tag:     (*ast.BasicLit)(nil),
+                                   Comment: (*ast.CommentGroup)(nil),
+                               },
+                           },
+                           Closing: 753,
+                       },
+                       Results: &ast.FieldList{
+                           Opening: 0,
+                           List:    {
+                               &ast.Field{
+                                   Doc:   (*ast.CommentGroup)(nil),
+                                   Names: nil,
+                                   Type:  &ast.Ident{
+                                       NamePos: 755,
+                                       Name:    "int64",
+                                       Obj:     (*ast.Object)(nil),
+                                   },
+                                   Tag:     (*ast.BasicLit)(nil),
+                                   Comment: (*ast.CommentGroup)(nil),
+                               },
+                           },
+                           Closing: 0,
+                       },
+                   },
+                   Body: &ast.BlockStmt{
+                       Lbrace: 761,
+                       List:   {
+                           &ast.ExprStmt{
+                               X:  &ast.CallExpr{
+                                   Fun: &ast.SelectorExpr{
+                                       X:  &ast.Ident{
+                                           NamePos: 764,
+                                           Name:    "fmt",
+                                           Obj:     (*ast.Object)(nil),
+                                       },
+                                       Sel: &ast.Ident{
+                                           NamePos: 768,
+                                           Name:    "Println",
+                                           Obj:     (*ast.Object)(nil),
+                                       },
+                                   },
+                                   Lparen: 775,
+                                   Args:   {
+                                       &ast.Ident{
+                                           NamePos: 776,
+                                           Name:    "numb",
+                                           Obj:     &ast.Object{(CYCLIC REFERENCE)},
+                                       },
+                                   },
+                                   Ellipsis: 0,
+                                   Rparen:   780,
+                               },
+                           },
+                           &ast.ReturnStmt{
+                               Return:  783,
+                               Results: {
+                                   &ast.Ident{
+                                       NamePos: 790,
+                                       Name:    "numb",
+                                       Obj:     &ast.Object{(CYCLIC REFERENCE)},
+                                   },
+                               },
+                           },
+                       },
+                       Rbrace: 795,
+                   },
+               },
+           },
+           Scope: &ast.Scope{
+               Outer:   (*ast.Scope)(nil),
+               Objects: {
+                   "SomethingWithTime": &ast.Object{
+                       Kind: 5,
+                       Name: "SomethingWithTime",
+                       Decl: &ast.FuncDecl{(CYCLIC REFERENCE)},
+                       Data: nil,
+                       Type: nil,
+                   },
+                   "ChosenInterface": &ast.Object{
+                       Kind: 3,
+                       Name: "ChosenInterface",
+                       Decl: &ast.TypeSpec{
+                           Doc:  (*ast.CommentGroup)(nil),
+                           Name: &ast.Ident{
+                               NamePos: 227,
+                               Name:    "ChosenInterface",
+                               Obj:     &ast.Object{(CYCLIC REFERENCE)},
+                           },
+                           Assign: 0,
+                           Type:   &ast.InterfaceType{
+                               Interface: 243,
+                               Methods:   &ast.FieldList{
+                                   Opening: 253,
+                                   List:    {
+                                       &ast.Field{
+                                           Doc:   (*ast.CommentGroup)(nil),
+                                           Names: {
+                                               &ast.Ident{
+                                                   NamePos: 256,
+                                                   Name:    "SomethingWithStrings",
+                                                   Obj:     &ast.Object{
+                                                       Kind: 5,
+                                                       Name: "SomethingWithStrings",
+                                                       Decl: &ast.Field{(CYCLIC REFERENCE)},
+                                                       Data: nil,
+                                                       Type: nil,
+                                                   },
+                                               },
+                                           },
+                                           Type: &ast.FuncType{
+                                               Func:   0,
+                                               Params: &ast.FieldList{
+                                                   Opening: 276,
+                                                   List:    {
+                                                       &ast.Field{
+                                                           Doc:   (*ast.CommentGroup)(nil),
+                                                           Names: {
+                                                               &!%v(DEPTH EXCEEDED),
+                                                           },
+                                                           Type:    &!%v(DEPTH EXCEEDED),
+                                                           Tag:     (*ast.BasicLit)(nil),
+                                                           Comment: (*ast.CommentGroup)(nil),
+                                                       },
+                                                   },
+                                                   Closing: 288,
+                                               },
+                                               Results: &ast.FieldList{
+                                                   Opening: 0,
+                                                   List:    {
+                                                       &ast.Field{
+                                                           Doc:     (*ast.CommentGroup)(nil),
+                                                           Names:   nil,
+                                                           Type:    &!%v(DEPTH EXCEEDED),
+                                                           Tag:     (*ast.BasicLit)(nil),
+                                                           Comment: (*ast.CommentGroup)(nil),
+                                                       },
+                                                   },
+                                                   Closing: 0,
+                                               },
+                                           },
+                                           Tag:     (*ast.BasicLit)(nil),
+                                           Comment: (*ast.CommentGroup)(nil),
+                                       },
+                                       &ast.Field{
+                                           Doc:   (*ast.CommentGroup)(nil),
+                                           Names: {
+                                               &ast.Ident{
+                                                   NamePos: 298,
+                                                   Name:    "SomethingWithFloats",
+                                                   Obj:     &ast.Object{
+                                                       Kind: 5,
+                                                       Name: "SomethingWithFloats",
+                                                       Decl: &ast.Field{(CYCLIC REFERENCE)},
+                                                       Data: nil,
+                                                       Type: nil,
+                                                   },
+                                               },
+                                           },
+                                           Type: &ast.FuncType{
+                                               Func:   0,
+                                               Params: &ast.FieldList{
+                                                   Opening: 317,
+                                                   List:    {
+                                                       &ast.Field{
+                                                           Doc:   (*ast.CommentGroup)(nil),
+                                                           Names: {
+                                                               &!%v(DEPTH EXCEEDED),
+                                                           },
+                                                           Type:    &!%v(DEPTH EXCEEDED),
+                                                           Tag:     (*ast.BasicLit)(nil),
+                                                           Comment: (*ast.CommentGroup)(nil),
+                                                       },
+                                                   },
+                                                   Closing: 328,
+                                               },
+                                               Results: &ast.FieldList{
+                                                   Opening: 0,
+                                                   List:    {
+                                                       &ast.Field{
+                                                           Doc:     (*ast.CommentGroup)(nil),
+                                                           Names:   nil,
+                                                           Type:    &!%v(DEPTH EXCEEDED),
+                                                           Tag:     (*ast.BasicLit)(nil),
+                                                           Comment: (*ast.CommentGroup)(nil),
+                                                       },
+                                                   },
+                                                   Closing: 0,
+                                               },
+                                           },
+                                           Tag:     (*ast.BasicLit)(nil),
+                                           Comment: (*ast.CommentGroup)(nil),
+                                       },
+                                   },
+                                   Closing: 336,
+                               },
+                               Incomplete: false,
+                           },
+                           Comment: (*ast.CommentGroup)(nil),
+                       },
+                       Data: nil,
+                       Type: nil,
+                   },
+                   "ChosenInterfaceImpl": &ast.Object{
+                       Kind: 3,
+                       Name: "ChosenInterfaceImpl",
+                       Decl: &ast.TypeSpec{
+                           Doc:  (*ast.CommentGroup)(nil),
+                           Name: &ast.Ident{
+                               NamePos: 344,
+                               Name:    "ChosenInterfaceImpl",
+                               Obj:     &ast.Object{(CYCLIC REFERENCE)},
+                           },
+                           Assign: 0,
+                           Type:   &ast.StructType{
+                               Struct: 364,
+                               Fields: &ast.FieldList{
+                                   Opening: 370,
+                                   List:    nil,
+                                   Closing: 371,
+                               },
+                               Incomplete: false,
+                           },
+                           Comment: (*ast.CommentGroup)(nil),
+                       },
+                       Data: nil,
+                       Type: nil,
+                   },
+                   "defaultChosenInterface": &ast.Object{
+                       Kind: 4,
+                       Name: "defaultChosenInterface",
+                       Decl: &ast.ValueSpec{
+                           Doc:   (*ast.CommentGroup)(nil),
+                           Names: {
+                               &ast.Ident{
+                                   NamePos: 378,
+                                   Name:    "defaultChosenInterface",
+                                   Obj:     &ast.Object{(CYCLIC REFERENCE)},
+                               },
+                           },
+                           Type: &ast.Ident{
+                               NamePos: 401,
+                               Name:    "ChosenInterface",
+                               Obj:     &ast.Object{(CYCLIC REFERENCE)},
+                           },
+                           Values: {
+                               &ast.UnaryExpr{
+                                   OpPos: 419,
+                                   Op:    17,
+                                   X:     &ast.CompositeLit{
+                                       Type: &ast.Ident{
+                                           NamePos: 420,
+                                           Name:    "ChosenInterfaceImpl",
+                                           Obj:     &ast.Object{(CYCLIC REFERENCE)},
+                                       },
+                                       Lbrace: 439,
+                                       Elts:   nil,
+                                       Rbrace: 440,
+                                   },
+                               },
+                           },
+                           Comment: (*ast.CommentGroup)(nil),
+                       },
+                       Data: int(0),
+                       Type: nil,
+                   },
+                   "SetChosenInterface": &ast.Object{
+                       Kind: 5,
+                       Name: "SetChosenInterface",
+                       Decl: &ast.FuncDecl{(CYCLIC REFERENCE)},
+                       Data: nil,
+                       Type: nil,
+                   },
+               },
+           },
+           Imports: {
+               &ast.ImportSpec{
+                   Doc:     (*ast.CommentGroup)(nil),
+                   Name:    (*ast.Ident)(nil),
+                   Path:    &ast.BasicLit{ValuePos:28, Kind:9, Value:"\"fmt\""},
+                   Comment: (*ast.CommentGroup)(nil),
+                   EndPos:  0,
+               },
+               &ast.ImportSpec{
+                   Doc:     (*ast.CommentGroup)(nil),
+                   Name:    (*ast.Ident)(nil),
+                   Path:    &ast.BasicLit{ValuePos:35, Kind:9, Value:"\"time\""},
+                   Comment: (*ast.CommentGroup)(nil),
+                   EndPos:  0,
+               },
+           },
+           Unresolved: {
+               &ast.Ident{
+                   NamePos: 160,
+                   Name:    "time",
+                   Obj:     (*ast.Object)(nil),
+               },
+               &ast.Ident{
+                   NamePos: 179,
+                   Name:    "time",
+                   Obj:     (*ast.Object)(nil),
+               },
+               &ast.Ident{
+                   NamePos: 191,
+                   Name:    "fmt",
+                   Obj:     (*ast.Object)(nil),
+               },
+               &ast.Ident{
+                   NamePos: 282,
+                   Name:    "string",
+                   Obj:     (*ast.Object)(nil),
+               },
+               &ast.Ident{
+                   NamePos: 290,
+                   Name:    "string",
+                   Obj:     (*ast.Object)(nil),
+               },
+               &ast.Ident{
+                   NamePos: 323,
+                   Name:    "int64",
+                   Obj:     (*ast.Object)(nil),
+               },
+               &ast.Ident{
+                   NamePos: 330,
+                   Name:    "int64",
+                   Obj:     (*ast.Object)(nil),
+               },
+               &ast.Ident{
+                   NamePos: 639,
+                   Name:    "string",
+                   Obj:     (*ast.Object)(nil),
+               },
+               &ast.Ident{
+                   NamePos: 647,
+                   Name:    "string",
+                   Obj:     (*ast.Object)(nil),
+               },
+               &ast.Ident{
+                   NamePos: 657,
+                   Name:    "fmt",
+                   Obj:     (*ast.Object)(nil),
+               },
+               &ast.Ident{
+                   NamePos: 748,
+                   Name:    "int64",
+                   Obj:     (*ast.Object)(nil),
+               },
+               &ast.Ident{
+                   NamePos: 755,
+                   Name:    "int64",
+                   Obj:     (*ast.Object)(nil),
+               },
+               &ast.Ident{
+                   NamePos: 764,
+                   Name:    "fmt",
+                   Obj:     (*ast.Object)(nil),
+               },
+           },
+           Comments: nil,
+       }
