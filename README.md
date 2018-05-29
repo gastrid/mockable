@@ -1,6 +1,27 @@
-This mockable will turn this:
+# Mockable #
 
+Mockable takes a bunch of functions in a file you specify and turns them into methods to a struct that implements an interface that's also created.
+
+## Parameters ##
+
+Mockable takes two compulsory parameters:
 ```
+filename: the name of the file you want to transform
+interface: the name of the interface that will be created
+```
+
+A variable name and a struct name will be generated from the interface name. If your interface name is `Foo`, the following
+will be generated:
+```go
+type FooImpl struct {}
+var defaultFoo Foo = &FooImpl{}
+```
+
+## What it does ##
+
+Mockable will turn this:
+
+```go
 // Package ast declares the types used to represent syntax trees for Go
 // packages.
 //
@@ -33,7 +54,7 @@ func SomethingWithFloats(numb int64) int64 {
 ```
 
 into this:
-```
+```go
 // Package ast declares the types used to represent syntax trees for Go
 // packages.
 //
@@ -44,7 +65,7 @@ import (
 	"time"
 )
 
-//go:generate mockable -interface=InterTest -filename=mocktest.go
+//go:generate genmock -interface=InterTest -mock-package=. -package=.
 
 // this is a comment
 func (mck *InterTestImpl) SomethingWithTime() *time.Time {
